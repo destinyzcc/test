@@ -15,4 +15,12 @@ public class PRInfo {
     String repo;
 
     String pullNumber;
+
+    public static void main(String[] args) {
+        String owner = "";
+        if (owner == null){
+            System.out.println("111");
+            System.out.println("222");
+        }
+    }
 }
