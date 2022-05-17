@@ -23,6 +23,8 @@ public class PRInfo {
             System.out.println("222");
         }
 
-        Assert.state(defaultValue != null, "Default value must not be null");
+        if (defaultValue == null) {
+            throw new NoDefaultValuePropertyException(getRootClass(), this.nestedPath + name);
+        }
     }
 }
