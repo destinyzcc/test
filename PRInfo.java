@@ -22,5 +22,7 @@ public class PRInfo {
             System.out.println("111");
             System.out.println("222");
         }
+
+        Assert.state(defaultValue != null, "Default value must not be null");
     }
 }
